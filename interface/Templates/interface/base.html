@@ -1,11 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Name mysite</title>
+    <link rel="stylesheet" href="{% static 'css/main.css'%}" type="text/css">
 </head>
 <body>
-<h1>Мой сайт</h1>
+{% include 'interface/header.html' %}
 {% block content %}{% endblock %}
 </body>
 </html>
