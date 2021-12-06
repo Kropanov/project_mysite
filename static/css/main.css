@@ -13,6 +13,22 @@ header{
 }
 
 .logo { 
-    padding: 15px;
+    padding: 20px;
+}
+
+ul {
     display: flex;
+    float: right;
+}
+
+ul > li {
+    color:rgb(0, 0, 0);
+    background-color: white;
+    margin: 15px 30px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+.logo img {
+    margin: 0px 0px 0px 60px;
 }
