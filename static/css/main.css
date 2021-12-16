@@ -2,9 +2,6 @@
     padding: 0;
     margin: 0;
 }
-a { 
-    text-decoration: none;
-}
 
 header{
     background-color: rgb(51, 51, 51);
@@ -21,7 +18,10 @@ ul {
     float: right;
 }
 
+/* меню сайта  rgb(0, 0, 0) white*/
 ul > li {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
     color:rgb(0, 0, 0);
     background-color: white;
     margin: 15px 30px;
@@ -29,6 +29,63 @@ ul > li {
     border-radius: 10px;
 }
 
+/* логотип сайта*/
 .logo img {
-    margin: 0px 0px 0px 60px;
+    margin: 0px 0px 0px 140px;
+}
+
+/* ссылки */
+a { 
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+a:visited { 
+    color: rgb(0, 0, 0);
+}
+
+/* информация обо мне  rgb(180, 57, 48)*/
+.Contacts {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid MediumSlateBlue;
+    background-color: rgb(51, 51, 51);
+    color: LightSkyBlue;
+}
+
+/* подвал сайта */
+.footer {
+    height: 110px;
+    text-align: center;
+    max-width: 100%;
+    padding: 20px;
+    background-color: rgb(51, 51, 51);
+}
+
+footer div:first-child{
+    border-bottom: 1px solid #a2a2a3;
+}
+
+footer a:visited { 
+    color: #a2a2a3;
+}
+
+footer * {
+    color:#a2a2a3;
+}
+
+/* Основная часть сайта (местоположение товара) */
+
+.tovar{
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+    padding: 200px;
+    margin: 20px 200px 20px 200px;
+    color:gold;
+    border-radius: 100px;
+}
+
+.tovar div {
+    border-bottom: 1px solid gold;
 }

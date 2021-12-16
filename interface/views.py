@@ -7,3 +7,7 @@ def index(request):
         "result": [12, 3, 7]
     }
     return render(request, "interface/index.html", context)
+
+
+def contacts(request):
+    return render(request, "interface/contacts.html", {})
