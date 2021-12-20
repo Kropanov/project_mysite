@@ -11,3 +11,6 @@ def index(request):
 
 def contacts(request):
     return render(request, "interface/contacts.html", {})
+
+def basket(request):
+    return render(request, "interface/basket.html", {})
