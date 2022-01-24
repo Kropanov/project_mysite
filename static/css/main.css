@@ -1,40 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
 * {
     padding: 0;
     margin: 0;
 }
 
-header{
-    background-color: rgb(51, 51, 51);
-    color: white;
-    width: 100%;
+#menu,
+  #menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.logo { 
-    padding: 20px;
+#menu {
+    width: 960px;
+    margin: 60px auto 40px auto;
+    border: 1px solid #222;
+    background-color: #111;
+    background-image: linear-gradient(#444, #111);
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #777;
 }
 
-ul {
-    display: flex;
-    float: right;
-}
+#menu:before,
+  #menu:after {
+    content: "";
+    display: table;
+  }
 
-/* меню сайта  rgb(0, 0, 0) white*/
-ul > li {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 16px;
-    color:rgb(0, 0, 0);
-    background-color: white;
-    margin: 15px 30px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-}
+  #menu:after {
+    clear: both;
+  }
 
-/* логотип сайта*/
-.logo img {
-    margin: 0px 0px 0px 140px;
-}
+  #menu {
+    zoom:1;
+  }
+
+#menu li {
+    float: left;
+    border-right: 1px solid #222;
+    box-shadow: 1px 0 0 #444;
+    position: relative;
+  }
+
+  #menu a {
+    float: left;
+    padding: 12px 30px;
+    color: #999;
+    text-transform: uppercase;
+    font: bold 12px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #000;
+  }
+
+  #menu li:hover > a {
+    color: #fafafa;
+  }
+
+  *html #menu li a:hover { /* IE6 only */
+    color: #fafafa;
+  }
+
+#menu ul {
+    margin: 20px 0 0 0;
+    _margin: 0; /*IE6 only*/
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;
+    background: #444;
+    background: linear-gradient(#444, #111);
+    box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+  }
+
+  #menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+  }
+
+  #menu ul ul {
+    top: 0;
+    left: 150px;
+    margin: 0 0 0 20px;
+    _margin: 0; /*IE6 only*/
+    box-shadow: -1px 0 0 rgba(255,255,255,.3);
+  }
+
+  #menu ul li {
+    float: none;
+    display: block;
+    border: 0;
+    _line-height: 0; /*IE6 only*/
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+  }
+
+  #menu ul li:last-child {
+    box-shadow: none;
+  }
+
+  #menu ul a {
+    padding: 10px;
+    width: 130px;
+    _height: 10px; /*IE6 only*/
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+  }
+
+  ul#menu a:hover {
+    /* background-color: #0186ba; */
+    /* background-image: linear-gradient(#04acec, #0186ba); */
+    background-image: linear-gradient(#18bafa, #035c80);
+  }
+
 
 /* ссылки */
 a { 
@@ -43,7 +126,7 @@ a {
 }
 
 a:visited { 
-    color: rgb(0, 0, 0);
+    color: rgb(224, 209, 209);
 }
 
 /* информация обо мне  rgb(180, 57, 48)*/
@@ -68,16 +151,29 @@ a:visited {
 
 /* подвал сайта */
 .footer {
-    height: 110px;
+    display: flex;
+    justify-content: center;
+    height: 70px;
     text-align: center;
     max-width: 100%;
     padding: 20px;
-    background-color: rgb(51, 51, 51);
+    background: linear-gradient(#444, #111);
+    /* Прошлый цвет подвалчика */
+    /* background-color: rgb(51, 51, 51); */
 }
 
-footer div:first-child{
-    border-bottom: 1px solid #a2a2a3;
+.footer div { 
+    margin: 10px;
+    padding: 10px;
+    opacity: 1;
 }
+
+.footer div:hover { 
+    border-bottom: 1px solid white;
+    transition: all ease-in-out 10s;
+    opacity: 0;
+}
+
 
 footer a:visited { 
     color: #a2a2a3;
@@ -91,11 +187,12 @@ footer * {
 
 .tovar{
     text-align: center;
-    background-color: rgb(51, 51, 51);
+    background: linear-gradient(144deg, rgb(54, 54, 54), rgb(17, 16, 16));
     padding: 200px;
-    margin: 20px 200px 20px 200px;
+    margin: 20px 200px 40px 200px;
     color:gold;
-    border-radius: 100px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 3px 2px rgb(83, 83, 83);
 }
 
 .tovar div {
