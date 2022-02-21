@@ -1,12 +1,17 @@
 {% load static %}
-<header>
-    <div class="logo">
-        <a href="{% url 'interface:index'%}"><img src="{% static 'img/Cast_Iron-logo.png' %}" width="160px" height="60px"></a>
-        <ul type=none>
-            <li><a href="{% url 'interface:index' %}">Главная</a></li>
-            <li><a href="{% url 'interface:contacts' %}">Контакты</a></li>
-            <li><a href="{% url 'interface:basket' %}">Корзина</a></li>
-            <li>Вход</li>
-        </ul>
+<!-- Добавление системы модульной верстки -->
+<div class="section header">
+    <div class="container">
+        <div class="row nav">
+            <div class="four columns">
+                logo
+            </div>
+            <div class="eight columns nav">
+                <a class='button button-primary' href="{% url 'interface:index' %}">Главная</a>
+                <a class='button button-primary' href="{% url 'interface:contacts' %}">Контакты</a>
+                <a class='button button-primary' href="{% url 'interface:basket' %}">Корзина</a>
+                <a class='button button-primary' href="#">Вход</a>
+            </div>
+        </div>
     </div>
-</header>
+</div>

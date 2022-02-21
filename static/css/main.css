@@ -1,49 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
-* {
-    padding: 0;
-    margin: 0;
-}
-
-header{
-    background-color: rgb(51, 51, 51);
-    color: white;
-    width: 100%;
-}
-
-.logo { 
-    padding: 20px;
-}
-
-ul {
-    display: flex;
-    float: right;
-}
-
-/* меню сайта  rgb(0, 0, 0) white*/
-ul > li {
-    font-family:'Times New Roman', Times, serif;
-    font-size: 16px;
-    color:rgb(0, 0, 0);
-    background-color: white;
-    margin: 15px 30px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-}
-
-/* логотип сайта*/
-.logo img {
-    margin: 0px 0px 0px 140px;
+.header { 
+  padding-top: 20px;
 }
 
 /* ссылки */
 a { 
     text-decoration: none;
     color:rgb(0, 0, 0);
-}
-
-a:visited { 
-    color: rgb(0, 0, 0);
 }
 
 /* информация обо мне  rgb(180, 57, 48)*/
@@ -68,16 +30,27 @@ a:visited {
 
 /* подвал сайта */
 .footer {
-    height: 110px;
+    display: flex;
+    justify-content: center;
+    height: 70px;
     text-align: center;
     max-width: 100%;
     padding: 20px;
-    background-color: rgb(51, 51, 51);
+    background: linear-gradient(#444, #111);
+    /* Прошлый цвет подвалчика */
+    /* background-color: rgb(51, 51, 51); */
 }
 
-footer div:first-child{
-    border-bottom: 1px solid #a2a2a3;
+.footer div { 
+    margin: 10px;
+    padding: 10px;
+    transition: all 1s ease-in-out;
 }
+
+.footer div:hover { 
+    border-bottom: 1px solid white;
+}
+
 
 footer a:visited { 
     color: #a2a2a3;
@@ -91,11 +64,12 @@ footer * {
 
 .tovar{
     text-align: center;
-    background-color: rgb(51, 51, 51);
+    background: linear-gradient(144deg, rgb(54, 54, 54), rgb(17, 16, 16));
     padding: 200px;
-    margin: 20px 200px 20px 200px;
+    margin: 20px 200px 40px 200px;
     color:gold;
-    border-radius: 100px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 3px 2px rgb(83, 83, 83);
 }
 
 .tovar div {
